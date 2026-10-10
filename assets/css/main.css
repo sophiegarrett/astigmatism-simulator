@@ -44,5 +44,66 @@ body {
     -moz-osx-font-smoothing: grayscale; /* Firefox/macOS */
 }
 
+main {
+    padding: 16px;
+}
+
+p {
+    margin: 0 0 1rem;
+}
+
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.25;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2.2rem;
+    letter-spacing: 0.016em;
+}
+
+h2 {
+    font-size: 1.7rem;
+    letter-spacing: 0.014em;
+}
+
+h3 {
+    font-size: 1.3rem;
+    letter-spacing: 0.013em;
+}
+
+h4, h5, h6 {
+    font-size: 1.1rem;
+    letter-spacing: 0.012em;
+}
+
+
+/* Text Elements */
+a {
+    text-decoration: underline;
+    padding: 2px;
+    box-decoration-break: clone;
+}
+
+
+/* Utility Classes */
+.center {
+    text-align: center;
+}
+
+.center-element {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Backward Compatibility */
+article, aside, footer, header, main, nav, section, audio, canvas, datalist, 
+details, figcaption, figure, output, progress, summary, video {
+    display: block;
+}
+
 
 body {background-color: purple;}
