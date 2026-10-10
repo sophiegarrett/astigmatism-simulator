@@ -46,6 +46,7 @@ body {
 
 main {
     padding: 16px;
+    max-width: 70ch;
 }
 
 p {
@@ -104,6 +105,3 @@ article, aside, footer, header, main, nav, section, audio, canvas, datalist,
 details, figcaption, figure, output, progress, summary, video {
     display: block;
 }
-
-
-body {background-color: purple;}
