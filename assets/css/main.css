@@ -47,6 +47,8 @@ body {
 main {
     padding: 16px;
     max-width: 70ch;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 p {
@@ -86,6 +88,14 @@ a {
     text-decoration: underline;
     padding: 2px;
     box-decoration-break: clone;
+}
+
+
+/* Control Box */
+#control-box {
+    padding: 16px;
+    margin: 0;
+    border: 2px solid black;
 }
 
 
