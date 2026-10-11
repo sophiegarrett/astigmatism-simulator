@@ -106,6 +106,10 @@ a {
     border: 2px solid;
 }
 
+#control-box fieldset {
+    flex-grow: 1;
+}
+
 
 /* Utility Classes */
 .center {
