@@ -39,6 +39,7 @@ body {
 }
 
 #control-box {
+    background-color: var(--box-color);
     border-color: var(--border-color);
 }
 

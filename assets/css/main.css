@@ -108,7 +108,7 @@ a {
 
 #control-box fieldset {
     flex-grow: 1;
-    margin: 12px;
+    gap: 12px;
 }
 
 
