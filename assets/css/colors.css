@@ -25,10 +25,10 @@
 
 /* Flashbang - pure black and white */
 [color-scheme = "flashbang"] {
-    --background-color: white;
-    --box-color: white;
-    --text-color: black;
-    --border-color: black;
+    --background-color: #FFFFFF;
+    --box-color: #FFFFFF;
+    --text-color: #000000;
+    --border-color: #000000;
 }
 
 

@@ -9,4 +9,10 @@
         });
     });
 
+    // Symptom sliders
+    const blurSlider = document.getElementById("blur");
+    blurSlider.oninput = function() {
+        document.body.style.filter = "blur(20px)";
+    }
+
 })();
