@@ -17,22 +17,14 @@
     const filteredSections = document.querySelectorAll(".filtered");
 
     let filterString = "none";
-    let blur = 0;
-    let ghosting = 0;
-    let halation = 0;
+    let blurString = "";
+    let ghostingString = "";
+    let halationString = "";
 
     function updateSymptoms() {
-        filterString = "";
+        filterString = blurString + ghostingString + halationString;
 
-        if (blur != 0) {
-            filterString += "blur(" + blur/2 + "px) ";
-        }
-
-        if (ghosting != 0) {
-            filterString += "drop-shadow(" + ghosting + "px " + ghosting + "px) ";
-        }
-
-        if (blur == 0 && ghosting == 0 && halation == 0) {
+        if (!filterString) {
             filterString = "none";
         }
 
@@ -41,16 +33,27 @@
         });
     }
 
+
     // Symptom sliders
     const blurSlider = document.getElementById("blur");
     blurSlider.addEventListener('input', function() {
-        blur = this.value;
+        if (this.value == 0) {
+            blurString = "";
+        }
+        else {
+            blurString = "blur(" + this.value/2 + "px) ";
+        }
         updateSymptoms();
     });
 
     const ghostingSlider = document.getElementById("ghosting");
     ghostingSlider.addEventListener('input', function() {
-        ghosting = this.value;
+        if (this.value == 0) {
+            ghostingString = "";
+        }
+        else {
+            ghostingString = "drop-shadow(" + this.value + "px " + this.value + "px) ";
+        }
         updateSymptoms();
     });
 
