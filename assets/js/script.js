@@ -15,7 +15,7 @@
 
     // Symptom filters
     const filteredSections = document.querySelectorAll(".filtered");
-    
+
     let filterString = "none";
     let blur = 0;
     let ghosting = 0;
@@ -27,7 +27,12 @@
         if (blur != 0) {
             filterString += "blur(" + blur/2 + "px) ";
         }
-        else {
+
+        if (ghosting != 0) {
+            filterString += "drop-shadow(8px 8px)";
+        }
+
+        if (blur == 0 && ghosting == 0 && halation == 0) {
             filterString = "none";
         }
 
@@ -41,6 +46,12 @@
     blurSlider.addEventListener('input', function() {
         blur = this.value;
         updateSymptoms();
+    });
+
+    const ghostingSlider = document.getElementById("ghosting");
+    ghostingSlider.addEventListener('input', function() {
+        ghosting = this.value;
+        updateSymptoms;
     });
 
 })();
