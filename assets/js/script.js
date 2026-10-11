@@ -29,7 +29,7 @@
         }
 
         if (ghosting != 0) {
-            filterString += "drop-shadow(8px 8px)";
+            filterString += "drop-shadow(" + ghosting + "px " + ghosting + "px) ";
         }
 
         if (blur == 0 && ghosting == 0 && halation == 0) {
@@ -51,7 +51,7 @@
     const ghostingSlider = document.getElementById("ghosting");
     ghostingSlider.addEventListener('input', function() {
         ghosting = this.value;
-        updateSymptoms;
+        updateSymptoms();
     });
 
 })();
