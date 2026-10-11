@@ -12,7 +12,7 @@
     // Symptom sliders
     const blurSlider = document.getElementById("blur");
     blurSlider.oninput = function() {
-        let filterString = "blur(" + this.value + "px)";
+        let filterString = "blur(" + this.value / 2 + "px)";
         document.body.style.filter = filterString;
     }
 

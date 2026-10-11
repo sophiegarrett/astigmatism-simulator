@@ -104,6 +104,7 @@ a {
     padding: 16px;
     margin: 0;
     border: 2px solid;
+    filter: none;
 }
 
 #control-box fieldset {
