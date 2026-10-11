@@ -30,11 +30,12 @@
         }
 
         document.body.style.filter = filterString;
+        controlBox.style.filter = "none";
     }
 
     // Symptom sliders
     const blurSlider = document.getElementById("blur");
-    blurSlider.addEventListener('change', function() {
+    blurSlider.addEventListener('input', function() {
         blur = this.value;
         updateSymptoms();
     });
