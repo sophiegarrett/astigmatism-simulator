@@ -14,6 +14,8 @@
 
 
     // Symptom filters
+    const filteredSections = document.querySelectorAll(".filtered");
+    
     let filterString = "none";
     let blur = 0;
     let ghosting = 0;
@@ -29,8 +31,9 @@
             filterString = "none";
         }
 
-        document.body.style.filter = filterString;
-        controlBox.style.filter = "none";
+        filteredSections.forEach(section => {
+            section.style.filter = filterString;
+        });
     }
 
     // Symptom sliders
