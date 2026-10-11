@@ -1,5 +1,8 @@
 (function() {
 
+    // Control box
+    const controlBox = document.getElementById("control-box");
+
     // Color scheme selection
     const colorSchemeButtons = document.querySelectorAll('input[name="color-scheme"]');
 
@@ -9,11 +12,31 @@
         });
     });
 
-    // Symptom sliders
-    const blurSlider = document.getElementById("blur");
-    blurSlider.oninput = function() {
-        let filterString = "blur(" + this.value / 2 + "px)";
+
+    // Symptom filters
+    let filterString = "none";
+    let blur = 0;
+    let ghosting = 0;
+    let halation = 0;
+
+    function updateSymptoms() {
+        filterString = "";
+
+        if (blur != 0) {
+            filterString += "blur(" + blur/2 + "px) ";
+        }
+        else {
+            filterString = "none";
+        }
+
         document.body.style.filter = filterString;
     }
+
+    // Symptom sliders
+    const blurSlider = document.getElementById("blur");
+    blurSlider.addEventListener('change', function() {
+        blur = this.value;
+        updateSymptoms();
+    });
 
 })();
