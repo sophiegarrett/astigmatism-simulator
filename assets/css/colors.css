@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/* Default color scheme: soft light */
+body {
+    background-color: #FFF0D8;
+    color: #2F2B2E;
+}
+
+#control-box {
+    border-color: #7A6A6A;
+}
+
+
+/* Dark mode */
+
+
+/* Flashbang */
+.flashbang body {
+    background-color: white;
+    color: black;
+}
+
+.flashbang #control-box {
+    border-color: black;
+}
