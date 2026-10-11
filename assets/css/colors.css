@@ -1,13 +1,15 @@
 @charset "UTF-8";
 
-/* Default color scheme: soft light - #FFF0D8, #E8D1B8, #C39B86, #7A6A6A, #2F2B2E */
+/* Default color scheme: soft light - #FFF0D8, #E8D1B8, #FFF5E5, #C39B86, #7A6A6A, #2F2B2E */
 :root {
     --background-color: #FFF0D8;
+    --box-color: #FFF5E5;
     --text-color: #2F2B2E;
     --border-color: #7A6A6A;
 }
 [color-scheme = "soft-light"] {
     --background-color: #FFF0D8;
+    --box-color: #FFF5E5;
     --text-color: #2F2B2E;
     --border-color: #7A6A6A;
 }
@@ -16,6 +18,7 @@
 /* Dark mode - #0D1B2A, #3F4562, #D9D9D9, #F5F5F5, #A7B2D3, #8C94B3 */
 [color-scheme = "dark-mode"] {
     --background-color: #0D1B2A;
+    --box-color: #3F4562;
     --text-color: #F5F5F5;
     --border-color: #A7B2D3;
 }
@@ -23,6 +26,7 @@
 /* Flashbang - pure black and white */
 [color-scheme = "flashbang"] {
     --background-color: white;
+    --box-color: white;
     --text-color: black;
     --border-color: black;
 }
@@ -35,5 +39,9 @@ body {
 }
 
 #control-box {
+    border-color: var(--border-color);
+}
+
+#control-box fieldset {
     border-color: var(--border-color);
 }
