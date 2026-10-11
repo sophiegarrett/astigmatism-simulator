@@ -104,12 +104,13 @@ a {
     padding: 16px;
     margin: 0;
     border: 2px solid;
-    filter: none;
+    filter: none !important;
 }
 
 #control-box fieldset {
     flex-grow: 1;
     gap: 12px;
+    filter: none !important;
 }
 
 
