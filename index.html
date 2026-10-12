@@ -24,7 +24,7 @@
     <body>
         <main>
 
-            <div class="filtered">
+            <section class="filtered" aria-label="Introduction">
                 <h1 class="center">See this page through the eyes of someone with astigmatism.</h1>
                 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
@@ -36,22 +36,21 @@
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
                     sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
+            </section>
 
-            <div id="control-box">
-
+            <section id="control-box" aria-label="Control Box">
                 <fieldset>
                     <legend>Color Schemes</legend>
 
-                    <input type="radio" id="soft-light" name="color-scheme" value="soft-light" checked>
+                    <input type="radio" name="color-scheme" id="soft-light" value="soft-light" checked>
                     <label for="soft-light">Soft Light</label>
                     <br>
 
-                    <input type="radio" id="dark-mode" name="color-scheme" value="dark-mode">
+                    <input type="radio" name="color-scheme" id="dark-mode" value="dark-mode">
                     <label for="dark-mode">Dark Mode</label>
                     <br>
 
-                    <input type="radio" id="flashbang" name="color-scheme" value="flashbang">
+                    <input type="radio" name="color-scheme" id="flashbang" value="flashbang">
                     <label for="flashbang">Flashbang</label>
                 </fieldset>
 
@@ -69,7 +68,12 @@
                     <input type="range" id="halation" min="0" max="10" value="0">
                     <label for="halation">Halation</label>
                 </fieldset>
-            </div>
+            </section>
+
+            <section class="filtered">
+
+
+            </section>
 
         </main>
 
