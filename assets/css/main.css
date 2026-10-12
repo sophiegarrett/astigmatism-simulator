@@ -96,11 +96,44 @@ a {
 }
 
 
-/* Other Elements */
+/* Details Element */
+details {
+    border: 1px solid;
+    padding: 0.5em;
+    margin: 1em 0;
+}
+
+details > summary {
+    cursor: pointer;
+    font-weight: bold;
+    list-style: none;
+}
+
+details > summary:focus-visible {
+    outline: 2px solid;
+    outline-offset: 2px;
+}
+
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+details > summary::before {
+    content: "[+] ";
+}
+
+details[open] > summary::before {
+    content: "[-] ";
+}
+
 .expand-hint {
     font-weight: normal;
     font-size: 0.9em;
     margin-left: 0.5em;
+}
+
+.expanded-content {
+    margin: 0.75em 1.8em 0;
 }
 
 

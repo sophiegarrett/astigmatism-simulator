@@ -38,6 +38,19 @@ body {
     color: var(--text-color);
 }
 
+a {
+    color: var(--border-color);
+}
+
+a:hover {
+    color: var(--text-color);
+}
+
+details {
+    background-color: var(--box-color);
+    border-color: var(--border-color);
+}
+
 #control-box {
     background-color: var(--box-color);
     border-color: var(--border-color);
