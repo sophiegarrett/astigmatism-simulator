@@ -5,29 +5,36 @@
     --background-color: #FFF0D8;
     --box-color: #FFF5E5;
     --text-color: #2F2B2E;
+    --link-color: #7A6A6A;
+    --link-hover-color: #2F2B2E;
     --border-color: #7A6A6A;
 }
 [color-scheme = "soft-light"] {
     --background-color: #FFF0D8;
     --box-color: #FFF5E5;
     --text-color: #2F2B2E;
+    --link-color: #7A6A6A;
+    --link-hover-color: #2F2B2E;
     --border-color: #7A6A6A;
 }
 
-
-/* Dark mode - #0D1B2A, #3F4562, #D9D9D9, #F5F5F5, #A7B2D3, #8C94B3 */
+/* Dark mode - #0D1B2A, #3F4562, #D9D9D9, #F5F5F5, #DAE0EC, #8C94B3 */
 [color-scheme = "dark-mode"] {
     --background-color: #0D1B2A;
     --box-color: #3F4562;
     --text-color: #F5F5F5;
-    --border-color: #A7B2D3;
+    --link-color: #DAE0EC;
+    --link-hover-color: #F5F5F5;
+    --border-color: #DAE0EC;
 }
 
-/* Flashbang - pure black and white */
+/* Flashbang - pure black and white, default-ish accent colors */
 [color-scheme = "flashbang"] {
     --background-color: #FFFFFF;
     --box-color: #FFFFFF;
     --text-color: #000000;
+    --link-color: #0000EE;
+    --link-hover-color: #551A8B;
     --border-color: #000000;
 }
 
@@ -39,11 +46,15 @@ body {
 }
 
 a {
-    color: var(--border-color);
+    color: var(--link-color);
 }
 
 a:hover {
-    color: var(--text-color);
+    color: var(--link-hover-color);
+}
+
+a:focus-visible {
+    color: var(--link-hover-color);
 }
 
 details {
