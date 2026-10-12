@@ -96,6 +96,14 @@ a {
 }
 
 
+/* Other Elements */
+.expand-hint {
+    font-weight: normal;
+    font-size: 0.9em;
+    margin-left: 0.5em;
+}
+
+
 /* Control Box */
 #control-box {
     display: flex;
