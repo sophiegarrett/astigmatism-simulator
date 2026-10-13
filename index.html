@@ -83,13 +83,47 @@
                 <p>Compensating for astigmatism can cause headaches and eye strain. It can also make driving at night difficult or dangerous.</p>
 
                 <p>Most cases of astigmatism can be treated with custom-made glasses or contact lenses. Some types of astigmatism require more 
-                    specialized treatments like hard contacts or eye surgery.<sup>3</sup> These treatments can cost thousands of dollars, putting 
-                    them out of reach for many people. Even with proper correction, symptoms sometimes don't go away completely. Using a screen can 
-                    be uncomfortable even if vision is clear otherwise.</p>
+                    specialized treatments like scleral lenses or eye surgery.<sup>3</sup> These treatments can cost thousands of dollars in the 
+                    US and Canada, putting them out of reach for many people.<sup>4, 5</sup> Even with proper correction, symptoms often 
+                    don't go away completely. Using a screen can be uncomfortable even if vision is clear otherwise.</p>
 
                 <h2>How does astigmatism impact people using digital interfaces?</h2>
 
+                <p>Blur and ghosting can make text much harder to read.<sup>6</sup> Sometimes, text may appear to vibrate.</p>
+
+                <p>Bright elements on dark backgrounds can cause a glow effect called halation.<sup>7</sup> The light color can look like it "bleeds" 
+                    into the space around it, making text and UI elements look fuzzy or shimmery.</p>
+
+                <p>In my own experience, most "dark mode" settings are unusable because of halation. Light themes can still cause me problems, 
+                    especially if the contrast is very high (like pure black text on a pure white background). I often see faint "copies" of 
+                    text in between the lines.</p>
+
+                <p>The combined effect is that astigmatism increases eye strain and makes websites harder to use.</p>
+
+
                 <h2>What should I keep in mind when I design UI?</h2>
+
+                <p>The <a href="https://www.w3.org/TR/WCAG22">Web Content Accessibility Guidelines</a> are always a good place to start. 
+                    Unfortunately, they do not contain any guidance for astigmatism.<sup>8</sup> I've come up with a rough list, combining various 
+                    sources with personal experience.<sup>9, 10</sup> It's not a comprehensive list, but it should cover the main points:</p>
+
+                <ul>
+                    <li>Avoid using pure black text on a pure white background (or vice versa). A small decrease in color contrast will reduce 
+                        distortion. (Don't reduce the contrast too much, though! Adequate color contrast is part of accessibility for people 
+                        with low vision.)</li>
+                    <li>If your website uses a "dark mode" theme (light text on a dark background), provide a "light mode" alternative 
+                        if feasible.</li>
+                    <li>Use a font that's easy to read. This page uses <a href="https://www.lexend.com">Lexend,</a> which is my personal 
+                        favorite. Other good options include Verdana, Calibri, and Atkinson Hyperlegible.</li>
+                    <li>Use a large font size. Bigger fonts are easier to read when they get blurry.</li>
+                    <li>Use a tall line height and wide letter spacing. More room between lines and letters stops them from overlapping 
+                        when they blur or duplicate.</li>
+                    <li>Be careful with bold and italic text. Both can be harder to read. Use them sparingly.</li>
+                </ul>
+
+                <p>You might notice that a lot of these design tips also apply for dyslexia! Accessible design for one group often benefits others.</p>
+
+                <p>Feel free to check the sources below for more info.</p>
 
                 <details>
                     <summary>
@@ -103,6 +137,18 @@
                             <li><a href="https://my.clevelandclinic.org/health/diseases/8576-astigmatism">Astigmatism - Cleveland Clinic</a></li>
                             <li><a href="https://www.reviewofophthalmology.com/article/managing-irregular-astigmatism">Managing Irregular 
                                 Astigmatism - Review of Ophthalmology</a></li>
+                            <li><a href="https://www.aao.org/eyenet/article/update-on-scleral-lenses">Update on Scleral Lenses - 
+                                American Academy of Ophthalmology</a></li>
+                            <li><a href="https://garrett.ca/learn/laser-eye-surgery-cost-in-canada-2025-the-complete-guide">Laser Eye Surgery 
+                                Cost in Canada - Garrett Agencies</a></li>
+                            <li><a href="https://www.astigmatismofit.com/blog/what-does-astigmatism-look-like">What Does Astigmatism Look 
+                                Like? Understanding Your Vision - AstigmatismoFit</a></li>
+                            <li><a href="https://www.astigmatismofit.com/blog/dark-mode-vs-light-mode-astigmatism">Why Dark Mode Can Make 
+                                Astigmatism Worse (Halation) - AstigmatismoFit</a></li>
+                            <li><a href="https://www.w3.org/TR/WCAG22">Web Content Accessibility Guidelines (WCAG) 2.2</a></li>
+                            <li><a href="https://www.colorcontrast.org/blog/why-dark-mode-text-hard-to-read/">Why Dark Mode Text Feels Hard to 
+                                Read: Halation, Astigmatism, and the Contrast Perception Gap - ColorContrast.org</a></li>
+                            <li><a href="https://guidefari.com/designing-for-astigmatism">Designing for astigmatism - Guide Fari</a></li>
                         </ol>
                     </div>
                 </details>
