@@ -95,6 +95,10 @@ a {
     box-decoration-break: clone;
 }
 
+li {
+    margin-bottom: 1em;
+}
+
 
 /* Details Element */
 details {
